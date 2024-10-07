@@ -106,7 +106,6 @@ console.log(colors);
 console.log(lastColor);
 
 
-
 // Example: Remove the first animal using the Array.shift method.
 removedAnimal = animalArray.shift();
 console.log('Removed the first animal', removedAnimal);
@@ -115,9 +114,9 @@ console.log('The animals are now', animalArray);
 // 4.d. TODO: Remove the first value from the `colors` array and store it
 //      inside a new variable called `firstColor`.
 //      To verify that your code worked, console.log `firstColor`!  
-
-
-
+let firstColor= colors.shift();
+console.log(firstColor);
+console.log(colors);
 
 // STRETCH GOALS:
 
