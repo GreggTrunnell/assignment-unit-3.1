@@ -24,8 +24,8 @@ console.log('Number of animals:', numberOfAnimals);
 // 2. TODO: Create a variable `numberOfFoods` and use the .length property
 //    to assign it the number value of how many items are inside `favoriteFoods`.
 //    Don't forget to console.log `numberOfFoods` to make sure your code worked!
-let numberOfFoods= favoriteFoods.length 
-console.log('Number of favorite foods', numberOfFoods);
+let numberOfFoods=favoriteFoods.length;
+console.log(numberOfFoods)
 
 // Accessing array items
 console.log('--- 3. Accessing items in an array ---');
@@ -125,9 +125,15 @@ let gems = ['Topaz', 'Citrine', 'Diamond', 'Emerald', 'Iolite', 'Tanzanite'];
 // 5.a (STRETCH) TODO: Replace the second gem with 'Tourmaline'.
 //      Remember to console.log the updated array.
 
+gems[1]='Tourmaline';
+console.log(gems);
+
 
 // 5.b (STRETCH) TODO: Sort your gems array in reverse alphabetical order.
 //     Please console.log the sorted array.
+
+
+
 
 
 // 5.c (STRETCH) TODO: Create a variable `gemString` and assign it a string value
@@ -144,7 +150,6 @@ let gems = ['Topaz', 'Citrine', 'Diamond', 'Emerald', 'Iolite', 'Tanzanite'];
 //     It should look something like:
 //       ['Tourmaline', 'Topaz', 'Tanzanite', 'Iolite', 'Emerald', 'Diamond', 'yellow', 'green']
 //     Now, console.log the new array.
-
 
 
 
