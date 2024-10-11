@@ -25,7 +25,7 @@ console.log('Number of animals:', numberOfAnimals);
 //    to assign it the number value of how many items are inside `favoriteFoods`.
 //    Don't forget to console.log `numberOfFoods` to make sure your code worked!
 let numberOfFoods=favoriteFoods.length;
-console.log(numberOfFoods)
+console.log("I've got ", numberOfFoods, "favorite foods")
 
 // Accessing array items
 console.log('--- 3. Accessing items in an array ---');
@@ -54,6 +54,8 @@ console.log('Last animal is ', lastAnimal)
 
 // 3.c. (STRETCH) TODO: Refactor 3.b to use the `animalArray` variable's .length 
 //       property, rather than the exact (hardcoded) index number of the last item.
+let otherLastAnimal=animalArray[animalArray.length -1];
+console.log(lastAnimal);
 
 
 // Adding & Removing Array Items
@@ -82,7 +84,7 @@ console.log(`Added an animal to beginning: ${animalArray}`);
 // 4.b. TODO: Create a variable `entree` and assign it a string value of
 //      an entree that you enjoy.
 //      Add the `entree` to the beginning of your `favoriteFoods` array.
-let entree='meatloaf';
+let entree='lasagna';
 favoriteFoods.unshift(entree);
 console.log(favoriteFoods);
 
@@ -132,6 +134,8 @@ console.log(gems);
 // 5.b (STRETCH) TODO: Sort your gems array in reverse alphabetical order.
 //     Please console.log the sorted array.
 
+gems.sort((a, b) => b.localeCompare(a));
+console.log(gems);
 
 
 
@@ -144,6 +148,8 @@ console.log(gems);
 //     🔥 You'll need to research the .join Array method. 🔥
 //     Don't forget to console.log `gemString`...
 
+let gemString=gems.join(' and ');
+console.log(gemString);
 
 // 5.d (STRETCH) TODO: Make a new array `colorfulGems` that combines 
 //     the gems array with the colors array.
@@ -151,6 +157,8 @@ console.log(gems);
 //       ['Tourmaline', 'Topaz', 'Tanzanite', 'Iolite', 'Emerald', 'Diamond', 'yellow', 'green']
 //     Now, console.log the new array.
 
+let colorfulGems=[...gems, ...colors];
+console.log(colorfulGems);
 
 
 // DO NOT MODIFY
